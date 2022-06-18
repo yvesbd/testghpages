@@ -10,11 +10,11 @@ paginate: {{ paginate.posts | inspect }}
 <br>
 paginator: {{ paginator.posts | inspect }}
 <br>
-{% assign posts_count = paginate.posts | size %}
+{% assign posts_count = site.posts | size %}
 {% if posts_count > 0 %}
 <h1>recent articles</h1>
     <div class="post-links">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
         <div class="post-link-wrapper">
           <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
           <div class="post-meta">
