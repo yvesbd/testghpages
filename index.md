@@ -6,6 +6,8 @@ layout: home
 ---
 {{ site.posts | inspect }}
 <br>
+{{ paginator.posts | inspect }}
+<br>
 {% assign posts_count = paginate.posts | size %}
 {% if posts_count > 0 %}
 <h1>recent articles</h1>
