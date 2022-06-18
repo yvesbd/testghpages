@@ -6,10 +6,6 @@ layout: home
 ---
 Testing modification from remote / git push
 <br>
-{{ site.posts | inspect }}
-<br>
-[ include content from _layout/home.html ]<br>
-{{ content }}
 {% assign posts_count = paginator.posts | size %}
 {% if posts_count > 0 %}
 <h1>recent articles</h1>
