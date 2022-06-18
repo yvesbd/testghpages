@@ -4,9 +4,11 @@
 
 layout: home
 ---
-{{ site.posts | inspect }}
+site: {{ site.posts | inspect }}
 <br>
-{{ paginator.posts | inspect }}
+paginate: {{ paginate.posts | inspect }}
+<br>
+paginator: {{ paginator.posts | inspect }}
 <br>
 {% assign posts_count = paginate.posts | size %}
 {% if posts_count > 0 %}
