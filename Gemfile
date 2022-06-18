@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
-gem "kramdown-parser-gfm"
-
-gemspec
+#gem "kramdown-parser-gfm"
+# gemspec
 
 
 # gem 'jekyll', '~> 3.8.5'
