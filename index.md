@@ -12,6 +12,7 @@ paginate: {{ paginate.posts | inspect }}
 paginator: {{ paginator.posts | inspect }}
 <br>
 -->
+<!--
 {% assign posts_count = paginate.posts | size %}
 {% if posts_count > 0 %}
 <h1>recent articles</h1>
@@ -48,3 +49,4 @@ paginator: {{ paginator.posts | inspect }}
 {% else %}
 <h2>no posts yet.</h2>
 {% endif %}
+-->
