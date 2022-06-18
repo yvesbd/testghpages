@@ -5,6 +5,9 @@
 layout: home
 ---
 Testing modification from remote / git push
+<br>
+{{ site.posts | inspect }}
+<br>
 
 <!--
 ## Welcome to GitHub Pages
