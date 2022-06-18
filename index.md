@@ -4,7 +4,7 @@
 
 layout: home
 ---
-Site.posts : {{ site.posts | inspect }}
+{{ site.posts | inspect }}
 <br>
 {% assign size = 0 %}
 {% assign posts_count = paginate.posts | size %}
