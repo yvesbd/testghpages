@@ -11,7 +11,14 @@ baseurl: "/testghpages" # the subpath of your site, e.g. /blog
 url: "https://yvesbd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #theme: jekyll-theme-hacker
-theme: jekyll-dash
+#theme: jekyll-dash
+remote_theme: bitbrain/jekyll-dash
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - liquid-md5
+  - jekyll/tagging
+
 
 # jekyll-paginate
 paginate: 5
@@ -21,6 +28,15 @@ paginate_path: "/blog/page:num/"
 tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
+
+# wether the author box should be displayed
+show_author: true
+
+# the animation speed of the scroll-in effect
+animation_speed: 50
+
+# wether to enable Right-to-Left support or not
+rtl: false
 
 dash:
 #  date_format: "%b %-d, %Y"
