@@ -4,7 +4,7 @@
 
 layout: home
 ---
-Testing modification from remote / git push
+Site.posts : {{ site.posts | inspect }}
 <br>
 {% assign size = 0 %}
 {% assign posts_count = paginate.posts | size %}
