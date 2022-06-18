@@ -1,4 +1,3 @@
-#2021-01-15-leaving.markdown
 ---
 layout: post
 title:  "Leaving 01 2022"
@@ -8,6 +7,7 @@ date_start: 2022-01-22 18:00:00 EST
 location: |
   Somewheree
 #post_image: mtlsec-2022-04-putin.jpg
+#2021-01-15-leaving.markdown
 ---
 This post
 .markdown version
