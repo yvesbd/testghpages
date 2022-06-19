@@ -63,7 +63,9 @@ color: black;
  
   {% endif %}
 
+  <% if page.post_image != null %>
   <img src="{{ site.baseurl }}/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
+  {% endif %}
 
   {{ content }}
 </div>
