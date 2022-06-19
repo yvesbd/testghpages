@@ -8,6 +8,7 @@ location: |
   Somewhere
 #post_image: mtlsec-2022-04-putin.jpg
 #2021-01-15-leaving.markdown
+iscancelled: true
 isevent: true
 ---
 This post

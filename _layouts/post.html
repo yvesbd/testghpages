@@ -29,6 +29,15 @@ _layout/post.html
   <h3>
   Event
   </h3>
+  
+  {% if page.iscancelled != null %}
+  <p style="color: red;">
+  CANCELLED - SORRY
+  <br/><br/>
+  ANNULE - DESOLE :-(
+  </p>
+  {% endif %}
+  
   <p>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   <br/>
