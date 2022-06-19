@@ -28,7 +28,7 @@ _layout/event.html
   <pre>
   @ {{ page.location }}
   </pre>
-  <img src="/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
+  <img src="{{ baseurl }}/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
 </div>
 
 {% if site.dash.disqus.shortname %}

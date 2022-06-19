@@ -14,21 +14,27 @@ _layout/post.html
       {% endfor %}
   </div>
   {% endif %}
+    
   <div class="post-date">Published on {{ page.date | date_to_string }}</div>
   {% if page.description != null %}
   <noscript>
     <div class="post-description">{{ page.description }}</div>
   </noscript>
+
+  {% if page.isevent != null %}
+
   <div id="animated-post-description" class="post-description" style="display: none;"></div>
   {% endif %}
   <p>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
-  {{ content }}
   <pre>
   @ {{ page.location }}
   </pre>
   <img src="/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
+  {% endif %}
+
+  {{ content }}
 </div>
 
 {% if site.dash.disqus.shortname %}
