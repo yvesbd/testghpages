@@ -20,11 +20,10 @@ _layout/post.html
   <noscript>
     <div class="post-description">{{ page.description }}</div>
   </noscript>
-
-  {% if page.isevent != null %}
-
   <div id="animated-post-description" class="post-description" style="display: none;"></div>
   {% endif %}
+
+  {% if page.isevent != null %}
   <p>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
