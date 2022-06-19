@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
+<!-- 
 _layout/post.html
+-->
 {% unless site.dash.show_author == false %}
   {% include author.html %}
 {% endunless %}
@@ -24,7 +26,13 @@ _layout/post.html
   {% endif %}
 
   {% if page.isevent != null %}
+  <h3>
+  Event
+  </h3>
   <p>
+  {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
+  <br/>
+  <br/>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
   <pre>
